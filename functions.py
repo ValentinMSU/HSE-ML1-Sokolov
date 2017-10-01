@@ -2,11 +2,11 @@ import math
 
 def prod_non_zero_diag(x):
 	res = 1
-    for i in range(len(x)):
-        for j in range(len(x[i])):
-            if (i == j) & (x[i][j] != 0):
-                res = res * x[i][j]
-    return res
+	for i in range(len(x)):
+	for j in range(len(x[i])):
+	    if (i == j) & (x[i][j] != 0):
+		res = res * x[i][j]
+	return res
 	
 	
 def are_multisets_equal(x,y):
