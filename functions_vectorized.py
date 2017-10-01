@@ -4,15 +4,15 @@ def prod_non_zero_diag(X):
   return x.prod()
 
 
-are_multisets_equal(x, y):
+def are_multisets_equal(x, y):
   return all(sort(x), sort(y))
 
 
-max_after_zero(x):
+def max_after_zero(x):
   return x[np.arange(len(x)-1)[x[:-1]==0] + 1].max()
 
 
-convert_image(z, coefs):
+def convert_image(z, coefs):
   return z[0] * coefs[0] + z[1] * coefs[1] + z[2] * coefs[2]
 
 
@@ -27,4 +27,3 @@ def run_length_encoding(x):
 def pairwise_distance(x,y):
   xs, ys = np.meshgrid(x,y)
   return np.sqrt((xs - ys) ** 2)
-  
